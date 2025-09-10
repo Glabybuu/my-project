@@ -6,6 +6,8 @@
     <title>Главная - Название вашего сайта</title>
     <meta name="description" content="Краткое описание главной страницы вашего сайта">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -13,8 +15,8 @@
             <nav>
                 <ul>
                     <li><a href="/"> Главная</a></li>
-                    <li><a href="/about.html"> О нас</a></li>
-                    <li><a href="/contacts.html"> Контакты</a></li>
+                    <li><a href="about.html"> О нас</a></li>
+                    <li><a href="contacts.html"> Контакты</a></li>
                 </ul>
             </nav>
     </header>
@@ -37,6 +39,46 @@
             <h2> Контакты </h3>
             <p> Телефоны </p>
         </section>
+
+
+        <hi>Форма обратной связи</hi>
+        <form id="Contactform">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="main" name="username" placeholder="Иван Иванов" required>
+
+            <label for="phone">Номер телефона:</label>
+            <input type="text" id="phone" name="phone" type="tel" inputmode="tel" placeholder="+7-999-999-99-99" required>
+
+            <label for="email">Ваша почта:</label>
+            <input type="text" id="email" name="email" placeholder="aaaa@email.com" required>
+
+            <label for="course">Выберите курс</label>
+            <select id="course" name="course">
+            <option value="">--</option>
+            <option value="1">1 курс</option>
+            <option value="2">2 курс</option>
+            <option value="3">3 курс</option>
+            <option value="4">4 курс</option>
+            <option value="other">Другое</option>
+            </select>
+
+            <br>
+            <label for="message">Ваше обращение</label>
+            <textarea id="message" name="message" rows="10" required></textarea>
+
+            <button type="submit">Отправить</button>
+            <button type="reset">Очистить</button>
+        </form>
+
+        <img src="../static/dasd.jpg" alt="картинка рабочего стола" width="450" height = "360" loading="lazy">
+        <div class="media">
+            <iframe
+            src="https://rutube.ru/video/9b52d150c933f60e7b25aac6410943c8/"
+            title="Видео о проекте" <!-- важно для
+            доступности -->
+            allow="autoplay; encrypted-media; picture-in-picture; web-share"
+            allowfullscreen loading="lazy"></iframe>
+            </div>      
     </main>
 
 
